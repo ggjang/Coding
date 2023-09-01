@@ -5,6 +5,9 @@ import (
 	"strconv"
 )
 
+// problem link https://euler.synap.co.kr/problem=4
+
+// 세자리 수를 곱해 만들 수 있는 가장 큰 대칭수
 func main() {
 	result := 0
 	for i := 100; i < 1000; i++ {
