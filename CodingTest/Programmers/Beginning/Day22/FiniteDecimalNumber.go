@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	println(solution(7, 20))
 	println(solution(11, 22))
@@ -18,7 +14,6 @@ func solution(a, b int) int {
 				b /= i
 			}
 		}
-		fmt.Printf("a:%d, b:%d\n", a, b)
 	} else if a < b {
 		for i := 1; i <= a; i++ {
 			if a%i == 0 && b%i == 0 {
@@ -26,7 +21,6 @@ func solution(a, b int) int {
 				b /= i
 			}
 		}
-		fmt.Printf("a:%d, b:%d\n", a, b)
 	} else {
 		return 1
 	}
@@ -40,8 +34,6 @@ func solution(a, b int) int {
 			break
 		}
 	}
-
-	fmt.Printf("a:%d, b:%d\n", a, b)
 
 	if b%2 == 0 || b%5 == 0 || b == 1 {
 		return 1
